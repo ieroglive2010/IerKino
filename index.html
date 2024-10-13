@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ierkino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ierkino</h1>
+        <h2>Киносайт от ieroglive</h2>
+       <style>
+        body {
+            background: lawngreen
+        }
+       </style>
+        <nav>
+            <ul>
+                <li><a href="#movies">Фильмы</a></li>
+                <li><a href="#about">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="movies">
+            <h2>Всё кино</h2>
+            <div class="movie" data-trailer="trailer1.mp4">
+                <h3>Фильм 1</h3>
+                <p>Имба фильм.</p>
+                <button style="element.style {
+                    color: blue;
+                }" class="trailer-btn">Глянуть трейлер</button>
+            </div>
+            <div class="movie" data-trailer="trailer2.mp4">
+                <h3>Фильм 2</h3>
+                <p>От этого фильма кот скинулся.</p>
+                <button class="trailer-btn">Глянуть трейлер</button>
+            </div>
+            <div class="movie" data-trailer="trailer3.mp4">
+                <h3>Фильм 3</h3>
+                <p>Хз.</p>
+                <button class="trailer-btn">Глянуть трейлер</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>КиноСайт от ieroglive</p>
+        </section>
+
+        <video id="trailer-player" controls style="display: none;"></video>
+    </main>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
